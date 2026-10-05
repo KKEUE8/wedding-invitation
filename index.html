@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="You are warmly invited to the wedding of Sarah & Amogelang — 17 October 2026, Ga-Rankuwa, South Africa." />
+  <title>Sarah &amp; Amogelang | 17 October 2026</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Sarah &amp; Amogelang — Home">S &amp; A</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#hero"     class="nav-link">Home</a></li>
+          <li><a href="#details"  class="nav-link">Our Day</a></li>
+          <li><a href="#gallery"  class="nav-link">Gallery</a></li>
+          <li><a href="#dresscode" class="nav-link">Dress Code</a></li>
+          <li><a href="#rsvp"    class="nav-link">RSVP</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+  <section class="hero" id="hero" aria-label="Wedding invitation hero">
+    <div class="hero-content">
+      <p class="hero-prelude animate-fade-up">Together with their families</p>
+
+      <div class="hero-divider hero-divider--top animate-fade-up" aria-hidden="true">
+        <span class="divider-gem"></span>
+      </div>
+
+      <h1 class="hero-names animate-fade-up">
+        <span class="hero-name">Sarah</span>
+        <span class="hero-ampersand">&amp;</span>
+        <span class="hero-name">Amogelang</span>
+      </h1>
+
+      <div class="hero-divider hero-divider--bottom animate-fade-up" aria-hidden="true">
+        <span class="divider-gem"></span>
+      </div>
+
+      <div class="hero-date animate-fade-up" aria-label="Wedding date and location">
+        <span class="hero-date-text">17 OCTOBER 2026</span>
+        <span class="hero-date-sep" aria-hidden="true">·</span>
+        <span class="hero-date-text">GA-RANKUWA</span>
+        <span class="hero-date-sep" aria-hidden="true">·</span>
+        <span class="hero-date-text">FROM 2 PM</span>
+      </div>
+
+      <p class="hero-quote animate-fade-up">
+        "With joyful hearts, we invite you to celebrate love,<br class="hero-br" />
+        family and tradition with us as we begin this beautiful<br class="hero-br" />
+        new chapter together."
+      </p>
+
+      <a href="#details" class="btn btn--gold animate-fade-up" aria-label="Open invitation — scroll to wedding details">
+        OPEN INVITATION
+      </a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       COUNTDOWN
+  ========================================================== -->
+  <section class="countdown-section" id="countdown" aria-label="Countdown to the wedding">
+    <div class="section-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-eyebrow">Counting down to our day</p>
+      <div class="countdown" id="countdownTimer" role="timer" aria-live="polite" aria-label="Wedding countdown">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-days">--</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-hours">--</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-minutes">--</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <span class="countdown-colon" aria-hidden="true">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-seconds">--</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown-message" id="countdownMessage" hidden></p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALLERY
+  ========================================================== -->
+  <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title" id="gallery-heading">Sarah &amp; Amogelang</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--tall animate-on-scroll">
+          <img src="images/couple-1.jpeg" alt="Sarah and Amogelang — elegant portrait on stone steps" loading="lazy" />
+        </figure>
+        <figure class="gallery-item animate-on-scroll">
+          <img src="images/couple-2.jpeg" alt="Amogelang embracing Sarah from behind, a tender moment" loading="lazy" />
+        </figure>
+        <figure class="gallery-item animate-on-scroll">
+          <img src="images/couple-3.jpeg" alt="Sarah and Amogelang holding hands on the garden steps" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WEDDING DETAILS
+  ========================================================== -->
+  <section class="details-section" id="details" aria-labelledby="details-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-eyebrow">Join us</span>
+        <h2 class="section-title" id="details-heading">A Celebration of Love &amp; Tradition</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="details-grid">
+
+        <!-- WHEN -->
+        <article class="detail-card animate-on-scroll" aria-label="Wedding date and time">
+          <div class="detail-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="32" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 16h32" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 4v8M27 4v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="14" y="21" width="5" height="5" rx="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="detail-card__label">When</h3>
+          <p class="detail-card__primary">Saturday</p>
+          <p class="detail-card__primary">17 October 2026</p>
+          <p class="detail-card__secondary">From 2:00 PM</p>
+        </article>
+
+        <!-- WHERE -->
+        <article class="detail-card animate-on-scroll" aria-label="Wedding location">
+          <div class="detail-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4C14.477 4 10 8.477 10 14c0 8.25 10 22 10 22s10-13.75 10-22c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="14" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="detail-card__label">Where</h3>
+          <p class="detail-card__primary">Ga-Rankuwa</p>
+          <p class="detail-card__secondary">South Africa</p>
+          <p class="detail-card__note">Full venue details will be shared with confirmed guests.</p>
+        </article>
+
+        <!-- DRESS CODE -->
+        <article class="detail-card animate-on-scroll" aria-label="Dress code information">
+          <div class="detail-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 6l-8 10h6v18h16V16h6L20 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 6c0 3.314 2.686 6 6 6s6-2.686 6-6" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="detail-card__label">Dress Code</h3>
+          <p class="detail-card__primary">Traditional Attire</p>
+          <p class="detail-card__note">
+            We would love for our guests to celebrate the occasion in traditional attire.
+            There is no specific colour requirement — please wear the traditional attire
+            that makes you feel comfortable, beautiful and connected to your culture.
+            We also kindly ask that you wear <strong>comfortable shoes</strong> for the day.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       DRESS CODE CALLOUT
+  ========================================================== -->
+  <section class="dresscode-section" id="dresscode" aria-labelledby="dresscode-heading">
+    <div class="section-pattern section-pattern--light" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-eyebrow">Attire</span>
+        <h2 class="section-title" id="dresscode-heading">Dress Code</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+      </div>
+      <div class="dresscode-content animate-on-scroll">
+        <p class="dresscode-primary">Traditional Attire</p>
+        <p class="dresscode-body">
+          We invite you to honour the beauty of African tradition by wearing traditional attire from your own culture.
+          No colour requirement — wear what resonates with your heritage and makes you feel joyful.
+          Come as you are, celebrate as one.<br /><br />
+          <strong>Please wear comfortable shoes</strong> — we want you dancing and celebrating all day long!
+        </p>
+        <div class="dresscode-note animate-on-scroll">
+          <p><strong>Please note:</strong> The blue, white and gold colours on this website are purely our design theme — guests are not expected to dress in these colours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       RSVP
+  ========================================================== -->
+  <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
+    <div class="section-pattern section-pattern--dark" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-eyebrow">Kindly reply by</span>
+        <h2 class="section-title" id="rsvp-heading">We'd Love to Celebrate With You</h2>
+        <p class="section-subtitle">RSVP</p>
+        <div class="gold-rule" aria-hidden="true"></div>
+      </div>
+
+      <!-- Google Forms Mode (hidden by default — activated via config.js) -->
+      <div id="rsvpGoogleMode" class="rsvp-google-mode" hidden aria-label="Google Forms RSVP options">
+        <p class="rsvp-google-intro animate-on-scroll">Please complete our RSVP form to let us know you'll be joining us.</p>
+        <div id="rsvpEmbedContainer" class="rsvp-embed-container animate-on-scroll" hidden>
+          <!-- Google Form iframe injected by JS when googleFormEmbedUrl is set -->
+        </div>
+        <div id="rsvpLinkContainer" class="rsvp-link-container animate-on-scroll" hidden>
+          <!-- External link button injected by JS when googleFormUrl is set -->
+        </div>
+      </div>
+
+      <!-- Demo Form Mode (shown by default) -->
+      <div id="rsvpDemoMode" class="rsvp-form-wrapper animate-on-scroll">
+        <form id="rsvpForm" class="rsvp-form" novalidate aria-label="RSVP form">
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Guest Information</legend>
+
+            <div class="form-group">
+              <label class="form-label" for="guestName">Full Name <span class="required" aria-label="required">*</span></label>
+              <input class="form-input" type="text" id="guestName" name="guestName" autocomplete="name" required aria-required="true" placeholder="Your full name" />
+              <span class="form-error" id="guestNameError" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="guestPhone">Phone Number <span class="required" aria-label="required">*</span></label>
+              <input class="form-input" type="tel" id="guestPhone" name="guestPhone" autocomplete="tel" required aria-required="true" placeholder="+27 xx xxx xxxx" />
+              <span class="form-error" id="guestPhoneError" role="alert" aria-live="polite"></span>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Attendance</legend>
+
+            <div class="form-group">
+              <p class="form-label" id="attendanceLabel">Will you be joining us? <span class="required" aria-label="required">*</span></p>
+              <div class="radio-group" role="radiogroup" aria-labelledby="attendanceLabel">
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="yes" required aria-required="true" />
+                  <span class="radio-custom" aria-hidden="true"></span>
+                  <span class="radio-text">Yes, I'll be there</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="attendance" value="no" />
+                  <span class="radio-custom" aria-hidden="true"></span>
+                  <span class="radio-text">Sadly, I won't be able to attend</span>
+                </label>
+              </div>
+              <span class="form-error" id="attendanceError" role="alert" aria-live="polite"></span>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset" id="attendingFields">
+            <legend class="form-legend">Your Group</legend>
+
+            <div class="form-group">
+              <label class="form-label" for="guestCount">Number of Guests</label>
+              <select class="form-input form-select" id="guestCount" name="guestCount" aria-label="Number of guests attending">
+                <option value="1" selected>1 (just me)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+              </select>
+            </div>
+
+            
+          </fieldset>
+
+          
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">A Little Extra</legend>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message to the Couple <span class="optional">(optional)</span></label>
+              <textarea class="form-input form-textarea" id="message" name="message" rows="4" placeholder="Share your love and well wishes…" aria-label="Optional message to the couple"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="songRequest">Song Request <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="songRequest" name="songRequest" placeholder="Request a song for the dancefloor!" />
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--gold btn--full" id="rsvpSubmitBtn">SUBMIT RSVP</button>
+          </div>
+
+        </form>
+
+        <!-- Success message -->
+        <div class="rsvp-success" id="rsvpSuccess" hidden role="alert" aria-live="assertive">
+          <div class="rsvp-success__icon" aria-hidden="true">♥</div>
+          <h3 class="rsvp-success__title">Thank You!</h3>
+          <p class="rsvp-success__body" id="rsvpSuccessMsg"></p>
+          <button class="btn btn--outline" id="rsvpResetBtn">Submit Another Response</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       LOCATION
+  ========================================================== -->
+  <section class="location-section" id="location" aria-labelledby="location-heading">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-eyebrow">Find us</span>
+        <h2 class="section-title" id="location-heading">Location</h2>
+        <div class="gold-rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="location-content animate-on-scroll">
+        <div class="location-info">
+          <p class="location-city">Ga-Rankuwa</p>
+          <p class="location-province">South Africa</p>
+          <div id="venueDetails" class="venue-details" hidden>
+            <p class="venue-name" id="venueName"></p>
+            <p class="venue-address" id="venueAddress"></p>
+          </div>
+          <p class="location-note" id="locationNote">
+            The exact venue will be confirmed and shared with all guests who have RSVPed.
+          </p>
+          <a class="btn btn--gold" id="directionsBtn" href="#" aria-label="Get directions to the venue" aria-disabled="true">
+            GET DIRECTIONS
+          </a>
+        </div>
+
+        <div class="location-map" id="mapContainer" aria-label="Map showing the wedding venue in Ga-Rankuwa">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <div class="footer-names">Sarah &amp; Amogelang</div>
+      <div class="footer-date">17 · 10 · 2026</div>
+      <div class="footer-tagline">"WITH LOVE, FAMILY &amp; TRADITION"</div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-copy">&copy; 2026 Sarah &amp; Amogelang</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
