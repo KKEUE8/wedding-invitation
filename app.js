@@ -171,21 +171,7 @@ function activateGoogleFormMode(cfg) {
   if (demoWrapper)   demoWrapper.hidden = true;
   if (googleWrapper) googleWrapper.hidden = false;
 
-  // Always inject the link button (shown on mobile via CSS, hidden on desktop)
-  const linkContainer = document.getElementById('rsvpLinkContainer');
-  if (linkContainer && cfg.googleFormUrl) {
-    linkContainer.hidden = false;
-    const link = document.createElement('a');
-    link.href = cfg.googleFormUrl;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.className = 'btn btn--gold';
-    link.textContent = 'RSVP NOW';
-    link.setAttribute('aria-label', 'Open RSVP form (opens in new tab)');
-    linkContainer.appendChild(link);
-  }
-
-  // Embed the form for desktop only
+  // Option A: embed the form
   if (cfg.googleFormEmbedUrl) {
     const embedContainer = document.getElementById('rsvpEmbedContainer');
     if (embedContainer) {
@@ -196,6 +182,22 @@ function activateGoogleFormMode(cfg) {
       iframe.setAttribute('allowfullscreen', '');
       iframe.setAttribute('loading', 'lazy');
       embedContainer.appendChild(iframe);
+    }
+  }
+
+  // Option B: link button (fallback when no embed URL)
+  if (cfg.googleFormUrl && !cfg.googleFormEmbedUrl) {
+    const linkContainer = document.getElementById('rsvpLinkContainer');
+    if (linkContainer) {
+      linkContainer.hidden = false;
+      const link = document.createElement('a');
+      link.href = cfg.googleFormUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.className = 'btn btn--gold';
+      link.textContent = 'RSVP NOW';
+      link.setAttribute('aria-label', 'Open RSVP form (opens in new tab)');
+      linkContainer.appendChild(link);
     }
   }
 }

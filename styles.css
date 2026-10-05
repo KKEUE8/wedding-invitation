@@ -940,22 +940,61 @@ ul { list-style: none; }
   margin-bottom: var(--space-md);
 }
 
+.rsvp-embed-container {
+  position: relative;
+}
+
 .rsvp-embed-container iframe {
   width: 100%;
   min-height: 820px;
   border: none;
   border-radius: var(--radius);
-  /* Prevent iframe from trapping page scroll on touch devices */
-  touch-action: pan-y;
+  display: block;
 }
 
-/* On mobile, hide the embed and show the link button instead */
+/* Narrow scroll-through strips on the left and right edges of the iframe —
+   guests can drag on these edges to scroll the page past the form on mobile */
 @media (max-width: 768px) {
-  .rsvp-embed-container {
-    display: none !important;
+  .rsvp-embed-container::before,
+  .rsvp-embed-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 2;
+    /* transparent — invisible but captures touch for page scroll */
   }
-  .rsvp-link-container {
-    display: block !important;
+  .rsvp-embed-container::before { left: 0; }
+  .rsvp-embed-container::after  { right: 0; }
+
+  .rsvp-embed-container iframe {
+    /* Slightly narrower so edge strips are accessible */
+    width: calc(100% - 0px);
+    min-height: 700px;
+  }
+
+  /* Scroll hint label below the form */
+  .rsvp-embed-container + .rsvp-scroll-hint {
+    display: block;
+  }
+}
+
+.rsvp-scroll-hint {
+  display: none; /* hidden on desktop */
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) 0;
+}
+
+@media (max-width: 768px) {
+  .rsvp-scroll-hint {
+    display: block;
   }
 }
 
