@@ -29,8 +29,8 @@ const WEDDING_CONFIG = {
     // ----------------------------------------------------------------
     // TODO: Replace the placeholders below once the venue is confirmed.
     // ----------------------------------------------------------------
-    exactVenueName: "Wedding Venue",
-    exactVenueAddress: "Ga-Rankuwa, South Africa",
+    exactVenueName: "70 Phase 8",
+    exactVenueAddress: "70 Phase 8, Ga-Rankuwa, 0208",
     googleMapsUrl: "https://maps.app.goo.gl/Hp4k9rDwx1xyfQqH9",
   },
 
