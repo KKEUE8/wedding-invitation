@@ -945,6 +945,18 @@ ul { list-style: none; }
   min-height: 820px;
   border: none;
   border-radius: var(--radius);
+  /* Prevent iframe from trapping page scroll on touch devices */
+  touch-action: pan-y;
+}
+
+/* On mobile, hide the embed and show the link button instead */
+@media (max-width: 768px) {
+  .rsvp-embed-container {
+    display: none !important;
+  }
+  .rsvp-link-container {
+    display: block !important;
+  }
 }
 
 .rsvp-link-container { text-align: center; }
