@@ -23,15 +23,15 @@ const WEDDING_CONFIG = {
   },
 
   location: {
-    city: "Ga-Rankuwa",
+    city: "Rama City",
     province: "South Africa",
 
     // ----------------------------------------------------------------
     // TODO: Replace the placeholders below once the venue is confirmed.
     // ----------------------------------------------------------------
-    exactVenueName: "70 Phase 8",
-    exactVenueAddress: "70 Phase 8, Ga-Rankuwa, 0208",
-    googleMapsUrl: "https://maps.app.goo.gl/Hp4k9rDwx1xyfQqH9",
+    exactVenueName: null,
+    exactVenueAddress: "460 Boruatlhapi Street, Uhuru Section, Rama City",
+    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=460+Boruatlhapi+Street%2C+Uhuru+Section%2C+Rama+City",
   },
 
   dressCode: "Traditional Attire",

@@ -1,6 +1,6 @@
 # Sarah & Amogelang — Wedding Invitation Website
 
-A premium digital wedding invitation for **Sarah and Amogelang**, taking place on **17 October 2026** in **Ga-Rankuwa, South Africa**, starting from 1:00 PM.
+A premium digital wedding invitation for **Sarah and Amogelang**, taking place on **17 October 2026** in **Rama City, South Africa**, starting from 1:00 PM.
 
 ---
 
@@ -81,10 +81,10 @@ const WEDDING_CONFIG = {
     iso: "2026-10-17T13:00:00+02:00",   // ← Do NOT change this (used by countdown)
   },
   location: {
-    city: "Ga-Rankuwa",
+    city: "Rama City",
     // ▼▼▼ UPDATE THESE WHEN VENUE IS CONFIRMED ▼▼▼
     exactVenueName:    null,   // e.g. "The Grand Ballroom"
-    exactVenueAddress: null,   // e.g. "123 Main Road, Ga-Rankuwa, 0208"
+    exactVenueAddress: null,   // e.g. "123 Main Road, Rama City, 0208"
     googleMapsUrl:     null,   // e.g. "https://maps.google.com/?q=..."
   },
   rsvp: {
@@ -103,7 +103,7 @@ When the venue is confirmed, open `config.js` and update:
 
 ```js
 exactVenueName:    "Your Venue Name",
-exactVenueAddress: "Full street address, Ga-Rankuwa, 0208",
+exactVenueAddress: "Full street address, Rama City, 0208",
 googleMapsUrl:     "https://maps.google.com/?q=Your+Venue+Name",
 ```
 
