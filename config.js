@@ -30,7 +30,7 @@ const WEDDING_CONFIG = {
     // TODO: Replace the placeholders below once the venue is confirmed.
     // ----------------------------------------------------------------
     exactVenueName: null,
-    exactVenueAddress: "460 Boruatlhapi Street, Uhuru Section, Rama City",
+    exactVenueAddress: "King Kopper Street, Rama City",
     googleMapsUrl: "https://maps.app.goo.gl/NstdMmKRqDZBf5bu7",
   },
 
