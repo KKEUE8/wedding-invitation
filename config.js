@@ -31,7 +31,7 @@ const WEDDING_CONFIG = {
     // ----------------------------------------------------------------
     exactVenueName: null,
     exactVenueAddress: "460 Boruatlhapi Street, Uhuru Section, Rama City",
-    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=460+Boruatlhapi+Street%2C+Uhuru+Section%2C+Rama+City",
+    googleMapsUrl: "https://maps.app.goo.gl/NstdMmKRqDZBf5bu7",
   },
 
   dressCode: "Traditional Attire",

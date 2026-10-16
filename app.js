@@ -399,12 +399,18 @@ function initLocation() {
     directionsBtn.setAttribute('aria-label', 'Get directions to the venue (opens in Google Maps)');
   }
 
-  // Embed Google Maps iframe using a search query embed
+  // Embed Google Maps iframe — use pinned URL when available, otherwise fall back to address search
   if (mapContainer) {
-    const query = encodeURIComponent(
-      (loc.exactVenueAddress || '') + ' ' + (loc.city || '') + ' ' + (loc.province || '')
-    ).trim();
-    const embedUrl = `https://maps.google.com/maps?q=${query}&output=embed`;
+    let embedUrl;
+    if (loc.googleMapsUrl && loc.googleMapsUrl.includes('goo.gl')) {
+      const q = encodeURIComponent(loc.googleMapsUrl);
+      embedUrl = `https://maps.google.com/maps?q=${q}&output=embed`;
+    } else {
+      const query = encodeURIComponent(
+        (loc.exactVenueAddress || '') + ', ' + (loc.province || '')
+      ).trim();
+      embedUrl = `https://maps.google.com/maps?q=${query}&output=embed`;
+    }
     mapContainer.innerHTML = '';
     const iframe = document.createElement('iframe');
     iframe.src = embedUrl;
